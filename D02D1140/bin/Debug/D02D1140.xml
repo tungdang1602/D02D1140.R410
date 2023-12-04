@@ -1,0 +1,204 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D02D1140
+</name>
+</assembly>
+<members>
+<member name="M:D02D1140.D02X0002.UpdateOrderNum(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32)">
+	<summary>
+ Cập nhật số thứ tự cho lưới
+ </summary>
+</member><member name="M:D02D1140.D02X0002.CheckExist(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Int32,System.String)">
+	<summary>
+ Kiểm tra sự tồn tại của 1 giá trị trong 1 cột trên lưới với nguồn dữ liệu trong TDBDropdown
+ </summary>
+</member><member name="M:D02D1140.D02X0002.SetCurrentRow(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.String)">
+	<summary>
+ Xác định ví trí hiện hành của lưới
+ </summary>
+</member><member name="M:D02D1140.D02X0002.Sum(System.Int32,C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Tính tổng cho 1 cột tương ứng trên lưới
+ </summary>
+	<param name="ipCol"></param>
+	<param name="C1Grid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02D1140.D02X0002.TongCong(System.Int32)">
+	<summary>
+ TONG CONG SO DONG TREN LUOI
+ </summary>
+	<param name="iRow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:D02D1140.D02X0002">
+	<summary>
+ Module này dùng để khai báo các Sub và Function toàn cục
+ </summary>
+	<remarks>Các khai báo Sub và Function ở đây không được trùng với các khai báo
+ ở các module D99Xxxxx
+ </remarks>
+</member><member name="T:D02D1140.D02X0003">
+	<summary>
+ Định nghĩa các biến truyền qua lại giữa các exe với nhau
+ </summary>
+</member><member name="F:D02D1140.D91E0240Form.D91F6010">
+	<summary>
+ D91F6010: Tìm kiếm theo Đối tượng, Mã hàng
+ D91F6020: Tìm kiếm Tiêu thức khi in báo cáo
+ D91F0402: Tìm kiếm theo Diễn giải
+ </summary>
+</member><member name="T:D02D1140.D91E0240Form">
+	<summary>
+ Các màn hình của exe con D91E0240: Tìm kiếm mở rộng
+ </summary>
+</member><member name="M:D02D1140.D91E0240.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con D91E0240
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D02D1140.D91E0240.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con D91E0240
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D02D1140.D91E0240.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D02D1140.D91E0240.FormPermision">
+	<summary>
+ Màn hình phân quyền
+ </summary>
+</member><member name="P:D02D1140.D91E0240.InListID">
+	<summary>
+ 1 : Tìm kiếm Loại chứng trừ
+ 2 : Tìm kiếm Đối tượng
+ 3 : Tìm kiếm Hàng hóa
+ </summary>
+</member><member name="P:D02D1140.D91E0240.InWhere">
+	<summary>
+ Điều kiện tìm kiếm, truyen vao mot chuoi tim kiem
+ Loại ĐT: Đối với Cbo Đối tượng thì truyền 
+ IsDxx =1: Đối với Mã hàng (InventoryID) 
+ </summary>
+</member><member name="P:D02D1140.D91E0240.SQLSelection">
+	<summary>
+ Câu SQL để load lên lưới khi tìm kiếm theo Tiêu thức của báo cáo
+ </summary>
+</member><member name="P:D02D1140.D91E0240.ModuleID">
+	<summary>
+ Truyền vào mã moduleID (Dxx)
+ VD: D90
+ </summary>
+</member><member name="P:D02D1140.D91E0240.InWhereValue">
+	<summary>
+ Điều kiện tìm kiếm, truyen vao gia tri can tim, con field can tim kiem thi trong du lieu da do ra
+ Loại ĐT: Đối với Cbo Đối tượng thi chi can truyen gia tri cua doi tuong, con truong ObjectID da co roi 
+ </summary>
+</member><member name="P:D02D1140.D91E0240.ModeSelect">
+	<summary>
+ ModeSelect
+ </summary>
+</member><member name="P:D02D1140.D91E0240.Output01">
+	<summary>
+ Kết quả sau khi tìm kiếm
+ </summary>
+</member><member name="P:D02D1140.D91E0240.Output02">
+	<summary>
+ Kết quả sau khi tìm kiếm
+ </summary>
+</member><member name="M:D02D1140.D91E0240.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="M:D02D1140.D91E0240.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="P:D02D1140.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D02D1140.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:D02D1140.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:D02D1140.D80E0440Form.D80F2090">
+	<summary>
+ D80F2090: Nhập dữ liệu từ Excel
+ </summary>
+</member><member name="T:D02D1140.D80E0440Form">
+	<summary>
+ Các màn hình của exe con D80E0440
+ </summary>
+</member><member name="M:D02D1140.D80E0440.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con D80E0440
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D02D1140.D80E0440.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con D80E0440
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D02D1140.D80E0440.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D02D1140.D80E0440.FormPermission">
+	<summary>
+ Form Phân quyền cho màn hình được gọi
+ </summary>
+</member><member name="P:D02D1140.D80E0440.FormStatus">
+	<summary>
+ Trạng thái Form màn hình : AddNew , Edit or View
+ </summary>
+</member><member name="P:D02D1140.D80E0440.Output01">
+	<summary>
+ Kết quả trả về
+ </summary>
+</member><member name="M:D02D1140.D80E0440.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:D02D1140.D80E0440.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member>
+</members>
+</doc>
